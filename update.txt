@@ -17,9 +17,12 @@
 2021 0131
 更换播放器 修复某些特殊编码格式不能播放
 
-Todo：
-Pc版客户端
-IOS客户端
+2022/06/11 : 
+Removed the LivePlayer and replaced it with the CkPlayer(version X2[2020.09.20]), due to the reason that the LivePlayer is having issues with some streaming sources.
+Added clickable streaming link to player page. Clicking the link can now open supported 3rd-party video players for better compatibility.
+Removed unnecessary Baidu Web Traffic Analytics script(https://tongji.baidu.com) in index.php
+
+
 
 
 

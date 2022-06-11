@@ -10,15 +10,6 @@
     <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="/js/jquery.lazyload.min.js"></script>
     <script src="/js/homepage.js?v=201602131645"></script>
-  <script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?3a019cff454d01908bf7cede7a6eaa04";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
   
 <script data-fixed="true">
   !function(){
@@ -87,7 +78,7 @@ $content = json_decode($content);
 foreach ($content->zhubo as $key) {
     $title1= str_replace(array("%3F","%20","%28","%29","%5E","%7E"),"",$key->title);
     echo '<div class="col-xs-6 col-sm-4 col-md-3 placeholder room-wrapper" data-site="Panda">
-                            <a href="/player/player.html?videoUrl='.$key->address.'" target="_blank" class="room-box">
+                            <a href="play.php?url='.$key->address.'" target="_blank" class="room-box">
                                 <div class="imgShow">
                                     <div class="img-wrapper">
                                         <img class="lazy" data-original="'.$key->img.'">
